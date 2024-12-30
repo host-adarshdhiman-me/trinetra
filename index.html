@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinetra</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(to bottom, #FFDAB9, #FF69B4); /* Gradient Background */
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .logo img {
+            width: 80%; /* Adjust logo size */
+        }
+        .app-name {
+            font-size: 36px;
+            margin-top: 20px;
+            color: #3498db; /* Blue color for title */
+            font-weight: bold;
+            text-shadow: 2px 2px 0px #fff, /* White stroke effect */
+                         -2px -2px 0px #fff,
+                         -2px 2px 0px #fff,
+                         2px -2px 0px #fff;
+        }
+        .sub-name {
+            font-size: 18px;
+            margin-top: 10px;
+            color: #333; /* Sub Name Color */
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background: #e74c3c; /* SOS-style red button */
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .button:hover {
+            background: #c0392b; /* Slightly darker red on hover */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Circular Logo -->
+        <div class="logo">
+            <img src="logo.png" alt="Trinetra Logo"> <!-- Add your logo image -->
+        </div>
+        <!-- App Name -->
+        <div class="app-name">Trinetra</div>
+        <!-- Sub Name -->
+        <div class="sub-name">Third Eye for Surveillance</div>
+        <!-- Return to Login Button -->
+        <button class="button" onclick="window.location.href='app-release.apk'">Download Trinetra</button>
+        <div class="sub-name">This is a pre-release version of "Trinetra," currently under development. We sincerely apologize for any missing features and appreciate your understanding.</div>
+    </div>
+</body>
+</html>
