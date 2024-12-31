@@ -72,6 +72,12 @@
         .button i {
             font-size: 20px; /* Adjust icon size */
         }
+        .ios-button {
+            background: #333; /* Dark gray button for iOS */
+        }
+        .ios-button:hover {
+            background: #555; /* Slightly lighter gray on hover */
+        }
     </style>
 </head>
 <body>
@@ -84,9 +90,13 @@
         <div class="app-name">Trinetra</div>
         <!-- Sub Name -->
         <div class="sub-name">Third Eye for Surveillance</div>
-        <!-- Return to Login Button -->
+        <!-- Download for Android Button -->
         <button class="button" onclick="window.location.href='app-release.apk'">
             <i class="fab fa-android"></i> Download Trinetra
+        </button>
+        <!-- Try for iOS Button -->
+        <button class="button ios-button" onclick="window.location.href='https://host-adarshdhiman-me.github.io/trinetraback/index.html'">
+            <i class="fab fa-apple"></i> Try for iOS
         </button>
         <div class="sub-name">This is a pre-release version of "Trinetra," currently under development. We sincerely apologize for any missing features and appreciate your understanding.</div>
     </div>
